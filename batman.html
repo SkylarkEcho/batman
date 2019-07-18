@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    /*背景div*/
+.parent{
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+}
+/*头部底层*/
+.head-one{
+    width: 100px;
+    height: 70px;
+    background-color: black;
+    margin: 0 auto;
+    position: relative;
+    top: 70px;
+    border-radius: 50px 50px 0 0; 
+}
+.head-two{
+    width: 102px;
+    height: 102px;
+    background-color: black;
+    border-radius: 80px;
+    margin: 0 auto;
+    position: relative;
+    top: 30px;
+    z-index: 10;
+}
+.head-three{
+    width: 90px;
+    height: 70px;
+    background-color: black;
+    margin: 0 auto;
+    position: relative;
+    top: -30px;
+    border-radius: 50%/50%; 
+}
+/*遮挡出 角*/
+.zhedangjiao{
+    width: 60px;
+    height: 50px;
+    background-color: white;
+    z-index: 5;
+    position: absolute;
+    left: 50%;
+    margin-left: -30px;
+    top: 76px;
+    border-radius: 23px 23px 0 0;
+}
+/*嘴部底层*/
+.zui-one{
+    width: 80px;
+    height: 50px;
+    background-color: rgba(239,207,157,1);
+    z-index: 15;
+    margin: 0 auto;
+    position: relative;
+    top: -83px;
+    border-radius:0 0 100% 100%;  
+}
+/*遮挡出嘴部的三角*/
+.zui-two{
+    width: 50px;
+    height: 30px;
+    background-color: black;
+    z-index: 20;
+    position: relative;
+    transform: rotate(20deg);
+    top: -150px;
+    left: 107px;
+}
+.zui-three{
+    width: 50px;
+    height: 30px;
+    background-color: black;
+    z-index: 20;
+    position: relative;
+    transform: rotate(-20deg);
+    top: -180px;
+    left: 143px;
+}
+/*眼睛底层*/
+.eyes{
+    width: 25px;
+    height: 25px;
+    background-color: rgba(127,127,127,1); 
+    z-index: 25;
+    position: relative;
+    border-radius: 100%; 
+}
+.eye-one{
+    top: -215px;
+    left: 118px;
+}
+.eye-two{
+    top: -240px;
+    left: 155px;
+}
+/*遮挡出眼睛的三角*/
+.eyess{
+    width: 30px;
+    height: 15px;
+    background-color: black;
+    z-index: 30;
+    position: relative;
+}
+.eyess-one{
+    top: -267px;
+    left: 118px;
+    transform: rotate(20deg);
+}
+.eyess-two{
+    top: -282px;
+    left: 152px;
+    transform: rotate(-20deg);
+}
+/*蝙蝠标志*/
+.logo{
+    width: 110px;
+    height: 60px;
+    background-color: black;
+    margin: 0 auto;
+    position: relative;
+    top: -195px;
+    border-radius: 50%/50%;
+}
+.logo-one{
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    z-index: 5;
+    border-radius: 50%; 
+    position: relative;
+    top:-225px;
+    left: 90px;
+}
+.logo-two{
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    z-index: 5;
+    border-radius: 50%; 
+    position: relative;
+    top:-285px;
+    left: 150px;
+}
+.logo-three{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    z-index: 10;
+    border-radius: 50%; 
+    position: relative;
+    top:-365px;
+    left: 75px;
+}
+.logo-four{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    z-index: 10;
+    border-radius: 50%; 
+    position: relative;
+    top:-405px;
+    left: 185px;
+}
+.logo-five{
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    margin: 0 auto;
+    position: relative;
+    top:-467px;
+    z-index: 15;
+}
+.logo-six{
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    margin: 0 auto;
+    position: relative;
+    transform: rotate(45deg);
+    top:-497px;
+    z-index: 20;
+}
+</style>
+<body>
+    <div class="parent">
+        <div class="zhedangjiao"></div>
+        <div class="head-one"></div>
+        <div class="head-two"></div>
+        <div class="head-three"></div>
+        <div class="zui-one"></div>
+        <div class="zui-two"></div>
+        <div class="zui-three"></div>
+        <div class="eyes eye-one"></div>
+        <div class="eyes eye-two"></div>
+        <div class="eyess eyess-one"></div>
+        <div class="eyess eyess-two"></div>
+        <div class="logo"></div>
+        <div class="logo-one"></div>
+        <div class="logo-two"></div>
+        <div class="logo-three"></div>
+        <div class="logo-four"></div>
+        <div class="logo-five"></div>
+        <div class="logo-six"></div>
+    </div>
+</body>
+</html>
